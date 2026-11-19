@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORME</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FORME</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__brand">
+        <a href="#inicio" class="navbar__logo">FORME</a>
+        <span class="navbar__subtitle">ASESORÍA DE ESTILO PERSONAL</span>
+      </div>
 
+      <button
+        type="button"
+        class="navbar__toggle"
+        id="navToggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio" class="navbar__link is-active">INICIO</a></li>
+          <li><a href="#tipo-de-cuerpo" class="navbar__link">TIPO DE CUERPO</a></li>
+          <li><a href="#colorimetria" class="navbar__link">COLORIMETRÍA</a></li>
+          <li><a href="#estilos" class="navbar__link">ESTILOS</a></li>
+        </ul>
+      </nav>
+
+      <a href="#agenda" class="navbar__cta">AGENDA UNA CITA</a>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
 </body>
 </html>

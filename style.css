@@ -1,8 +1,177 @@
-/* Base inicial del proyecto FORME */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* --- Aquí agrega cada quien sus estilos --- */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
+  color: #141414;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
+}
+
+.navbar__inner {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 18px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.navbar__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.navbar__logo {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  line-height: 1;
+  color: #141414;
+  text-decoration: none;
+}
+
+.navbar__subtitle {
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: #8f8f8f;
+  pointer-events: none;
+  user-select: none;
+}
+
+.navbar__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.navbar__link {
+  position: relative;
+  display: inline-block;
+  padding: 6px 0;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #7c7c7c;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__link.is-active {
+  color: #141414;
+}
+
+.navbar__link.is-active::after,
+.navbar__link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px;
+  background-color: #141414;
+}
+
+.navbar__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 24px;
+  border: 1px solid #141414;
+  color: #141414;
+  background-color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.navbar__cta:hover {
+  background-color: #141414;
+  color: #ffffff;
+}
+
+.navbar__toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  border: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.navbar__toggle span {
+  display: block;
+  width: 18px;
+  height: 1.5px;
+  margin: 0 auto;
+  background-color: #141414;
+}
+
+@media (max-width: 960px) {
+  .navbar__inner {
+    padding: 14px 20px;
+  }
+
+  .navbar__list {
+    gap: 18px;
+  }
+
+  .navbar__link {
+    font-size: 0.72rem;
+  }
+
+  .navbar__cta {
+    padding: 10px 16px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__toggle {
+    display: flex;
+  }
+
+  .navbar__cta {
+    display: none;
+  }
+
+  .navbar__nav {
+    display: none;
+    width: 100%;
+    padding-top: 12px;
+    border-top: 1px solid #ececec;
+  }
+
+  .navbar__nav.is-open {
+    display: block;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
