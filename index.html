@@ -3,86 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FORME — Asesoría de Estilo Personal</title>
+  <title>FORME</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap"
     rel="stylesheet"
   />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <div class="header-inner">
-      <div class="brand-block">
-        <a href="#inicio" class="brand-logo" aria-label="FORME Inicio">FORME</a>
-        <span class="service-label" aria-hidden="true">ASESORÍA DE ESTILO PERSONAL</span>
+  <header class="navbar">
+    <div class="navbar__inner">
+      <div class="navbar__brand">
+        <a href="#inicio" class="navbar__logo">FORME</a>
+        <span class="navbar__subtitle">ASESORÍA DE ESTILO PERSONAL</span>
       </div>
 
       <button
         type="button"
-        class="menu-toggle"
-        id="menuToggle"
-        aria-label="Abrir menú de navegación"
+        class="navbar__toggle"
+        id="navToggle"
+        aria-label="Abrir menú"
         aria-expanded="false"
-        aria-controls="mainNav"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
-        <ul class="nav-list">
-          <li><a href="#inicio" class="nav-link is-active">INICIO</a></li>
-          <li><a href="#tipo-de-cuerpo" class="nav-link">TIPO DE CUERPO</a></li>
-          <li><a href="#colorimetria" class="nav-link">COLORIMETRÍA</a></li>
-          <li><a href="#estilos" class="nav-link">ESTILOS</a></li>
+      <nav class="navbar__nav" id="navMenu" aria-label="Navegación principal">
+        <ul class="navbar__list">
+          <li><a href="#inicio" class="navbar__link is-active">INICIO</a></li>
+          <li><a href="#tipo-de-cuerpo" class="navbar__link">TIPO DE CUERPO</a></li>
+          <li><a href="#colorimetria" class="navbar__link">COLORIMETRÍA</a></li>
+          <li><a href="#estilos" class="navbar__link">ESTILOS</a></li>
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <a href="#agenda" class="btn-agenda" id="btnAgenda">AGENDA UNA CITA</a>
-      </div>
+      <a href="#agenda" class="navbar__cta">AGENDA UNA CITA</a>
     </div>
   </header>
-
-  <main>
-    <section class="hero-section" id="inicio" aria-label="Sección principal">
-      <div class="hero-inner">
-        <span class="hero-kicker" aria-hidden="true">ASESORÍA DE ESTILO PERSONAL</span>
-        <h1 class="hero-title">Tu imagen, alineada con tu esencia</h1>
-        <p class="hero-description">
-          Descubre tu tipo de cuerpo, tu paleta de colorimetría y el estilo que mejor comunica quién eres.
-        </p>
-        <div class="hero-cta-group">
-          <a href="#agenda" class="btn-agenda">AGENDA UNA CITA</a>
-          <a href="#tipo-de-cuerpo" class="btn-secondary">EXPLORAR SERVICIOS</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="placeholder-section" id="tipo-de-cuerpo">
-      <h2>Tipo de Cuerpo</h2>
-      <p>Sección de análisis corporal y proporciones.</p>
-    </section>
-
-    <section class="placeholder-section" id="colorimetria">
-      <h2>Colorimetría</h2>
-      <p>Sección de paleta cromática personal.</p>
-    </section>
-
-    <section class="placeholder-section" id="estilos">
-      <h2>Estilos</h2>
-      <p>Sección de identidad estética y proyección.</p>
-    </section>
-
-    <section class="placeholder-section" id="agenda">
-      <h2>Agenda una Cita</h2>
-      <p>Reserva tu sesión personalizada con FORME.</p>
-    </section>
-  </main>
 
   <script src="script.js"></script>
 </body>
