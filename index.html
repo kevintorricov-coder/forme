@@ -1,11 +1,277 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORME</title>
+    <meta name="description" content="FORMÉ - Asesoría de imagen y estilo personal">
+    <title>FORMÉ | Asesoría de Imagen</title>
+
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <a href="#" class="logo">
+            FORMÉ
+            <span>ASESORÍA DE IMAGEN</span>
+        </a>
+
+        <nav class="nav" id="nav">
+            <a href="#inicio" class="active">INICIO</a>
+            <a href="#servicios">MIS SERVICIOS</a>
+            <a href="#proceso">CONSULTORÍA</a>
+            <a href="#contacto">CONTACTO</a>
+        </nav>
+
+        <a href="#contacto" class="header-btn">AGENDA TU CITA</a>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Abrir menú">
+            ☰
+        </button>
+    </header>
+
+    <main>
+
+        <!-- HERO / INICIO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+                <span class="eyebrow">ASESORÍA DE IMAGEN PERSONAL</span>
+
+                <h1>
+                    El Arte de<br>
+                    Vestirte con<br>
+                    <em>Intención.</em>
+                </h1>
+
+                <p>
+                    Descubre cómo tu cuerpo, tu colorimetría
+                    y tu personalidad pueden convertirse en
+                    una herramienta de expresión para
+                    reflejar quién eres y potenciar tu estilo.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn btn-dark">
+                        AGENDA TU CITA
+                    </a>
+
+                    <a href="#servicios" class="btn btn-light">
+                        MIS SERVICIOS
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+                     alt="Mujer con estilo elegante">
+            </div>
+
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="services section" id="servicios">
+
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">DESCUBRE TU ESENCIA</span>
+                    <h2>Un método,<br>tres pilares.</h2>
+                </div>
+
+                <p>
+                    Cada persona tiene una combinación única
+                    de rasgos, colores y personalidad.
+                    Nuestro método busca potenciar tu esencia
+                    para proyectar una imagen auténtica.
+                </p>
+            </div>
+
+            <div class="services-image">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1200&q=85"
+                     alt="Estilo y asesoría de imagen">
+            </div>
+
+            <div class="cards">
+
+                <article class="service-card">
+                    <span class="number">01</span>
+                    <h3>Tipo de Cuerpo</h3>
+                    <p>
+                        Aprende a identificar las proporciones
+                        de tu cuerpo y descubre qué prendas
+                        resaltan mejor tu figura.
+                    </p>
+                    <a href="#contacto">DESCUBRIR MÁS ↗</a>
+                </article>
+
+                <article class="service-card">
+                    <span class="number">02</span>
+                    <h3>Colorimetría</h3>
+                    <p>
+                        Descubre los colores que armonizan
+                        con tu tono de piel y aprende a
+                        combinarlos correctamente.
+                    </p>
+                    <a href="#contacto">DESCUBRIR MÁS ↗</a>
+                </article>
+
+                <article class="service-card">
+                    <span class="number">03</span>
+                    <h3>Identidad de Estilo</h3>
+                    <p>
+                        Encuentra tu propio estilo y
+                        construye una imagen que represente
+                        tu personalidad y esencia.
+                    </p>
+                    <a href="#contacto">DESCUBRIR MÁS ↗</a>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- PROCESO -->
+        <section class="process section" id="proceso">
+
+            <span class="eyebrow">NUESTRO PROCESO</span>
+
+            <h2>
+                De la consulta<br>
+                al guardarropa ideal.
+            </h2>
+
+            <div class="process-grid">
+
+                <article class="process-card">
+                    <span>01</span>
+                    <h3>Diagnóstico</h3>
+                    <p>
+                        Analizamos tus gustos, necesidades
+                        y objetivos para conocer tu imagen
+                        actual y lo que deseas proyectar.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span>02</span>
+                    <h3>Análisis</h3>
+                    <p>
+                        Identificamos tu morfología,
+                        armonía de colores y preferencias
+                        para definir tu estilo.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span>03</span>
+                    <h3>Propuesta</h3>
+                    <p>
+                        Creamos una guía de estilo
+                        personalizada con prendas,
+                        paletas y combinaciones ideales.
+                    </p>
+                </article>
+
+                <article class="process-card">
+                    <span>04</span>
+                    <h3>Implementación</h3>
+                    <p>
+                        Te acompañamos en el proceso
+                        de transformar tu guardarropa
+                        y aplicar tu nueva imagen.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- FRASE -->
+        <section class="quote">
+            <h2>"La moda pasa. El estilo permanece."</h2>
+            <span>— COCO CHANEL</span>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="contact section" id="contacto">
+
+            <div class="contact-content">
+                <div>
+                    <span class="eyebrow">TU NUEVA IMAGEN COMIENZA AQUÍ</span>
+
+                    <h2>
+                        ¿Lista para<br>
+                        transformar tu<br>
+                        imagen?
+                    </h2>
+
+                    <p>
+                        Agenda una consulta inicial y descubre
+                        el estilo que habla de ti. Es momento
+                        de proyectar tu mejor versión.
+                    </p>
+                </div>
+
+                <a href="https://wa.me/59170000000"
+                   target="_blank"
+                   class="btn btn-outline">
+                    AGENDA TU CITA ↗
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-grid">
+
+            <div class="footer-brand">
+                <h2>FORMÉ</h2>
+                <span>ASESORÍA DE IMAGEN</span>
+
+                <p>
+                    Tu imagen es tu carta de presentación.
+                    Descubre tu esencia y proyecta tu
+                    personalidad con confianza.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>NAVEGACIÓN</h4>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Mis servicios</a>
+                <a href="#proceso">Consultoría</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>CONTACTO</h4>
+                <a href="mailto:info@forme.com">info@forme.com</a>
+                <a href="https://wa.me/59170000000">WhatsApp</a>
+                <a href="#contacto">Bolivia</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 FORMÉ. TODOS LOS DERECHOS RESERVADOS.</p>
+            <p>DISEÑADO CON INTENCIÓN.</p>
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>
