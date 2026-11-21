@@ -6,3 +6,64 @@
 }
 
 /* --- Aquí agrega cada quien sus estilos --- */
+
+/* SECCIÓN INTRODUCCIÓN */
+
+.intro-estilo {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 5%;
+    box-sizing: border-box;
+}
+
+.intro-contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-texto {
+    color: #777680;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    margin: 0;
+
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* ANIMACIÓN DE ENTRADA */
+
+.intro-texto.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TABLET */
+
+@media (max-width: 1023px) {
+    .intro-estilo {
+        padding: 45px 5%;
+    }
+
+    .intro-texto {
+        font-size: 26px;
+        line-height: 1.6;
+    }
+}
+
+/* CELULAR */
+
+@media (max-width: 767px) {
+    .intro-estilo {
+        padding: 35px 6%;
+    }
+
+    .intro-texto {
+        font-size: 19px;
+        line-height: 1.7;
+        letter-spacing: 0.5px;
+    }
+}
